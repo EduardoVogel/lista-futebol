@@ -1,0 +1,8 @@
+   
+<h3>Lista Futebol</h3>
+<p>Competições:</p>
+<div *ngFor="let competition of competitions" (click)='toCompetition(competition)'
+ [routerLink]="['/competition', IDcompetition]"><img class ="img" src={{emblemUrl}}>
+        {{competition.name}}
+</div>
+

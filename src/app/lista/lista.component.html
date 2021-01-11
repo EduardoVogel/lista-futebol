@@ -1,0 +1,14 @@
+
+<h3>Lista Futebol</h3>
+<img  class='center' src={{imgUrl}}>
+<h2 class='centertext'>{{nameTeam}}</h2>
+<h5 class="spam">Coach:</h5>
+<spam class='spam'><h5 *ngFor="let player of squad">{{getCoach(player)}}</h5></spam>
+<br>
+<h4>Jogadores</h4>
+<div *ngFor="let player of squad">
+        <ul>
+                <li>{{player.name}}  |  {{player.position}}  |  {{player.nationality}}  |  {{getAge(player)}}</li>
+        </ul>
+        
+</div>

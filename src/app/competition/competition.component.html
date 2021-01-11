@@ -1,0 +1,6 @@
+<h3>Lista Futebol</h3>
+<p>Times</p>
+<div *ngFor="let team of teams" (click)='toTeam(team)'
+ [routerLink]="['/lista', IDteam]">
+        {{team.name}}
+</div>
